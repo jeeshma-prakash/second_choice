@@ -1,0 +1,83 @@
+.contact-section {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 99, 112, 0.5), rgba(0, 206, 252, 0.5)),  url('../images/contact-hero.jpg') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -80px; /* Push section up behind navbar */
+  padding-top: 80px;  /* Add space so content appears correctly below navbar */
+  z-index: 1;
+}
+
+.contact-section .content-box {
+  text-align: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.contact-section .content-box h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-section .content-box p {
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+.contact-section .content-box span {
+  margin: 0 5px;
+  color: #fff;
+}
+.content-box a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.tz-gallery .lightbox {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.tz-gallery .lightbox img {
+  transition: 0.3s ease-in-out;
+}
+
+.tz-gallery .lightbox:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: "\f065";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 2rem;
+  color: #fff;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.tz-gallery .lightbox:after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 123, 255, 0.5);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.tz-gallery .lightbox:hover:before,
+.tz-gallery .lightbox:hover:after {
+  opacity: 1;
+}
+
+.tz-gallery .lightbox:hover img {
+  transform: scale(1.05);
+}

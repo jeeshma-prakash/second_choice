@@ -1,0 +1,259 @@
+.smilecard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 50px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin: 40px auto;
+  max-width: 900px;
+}
+.smilecard:hover{
+    border: 1px solid green;
+}
+
+.smilecard-content {
+  text-align: center;
+}
+
+.smilecard-icon img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.smilecard h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #000;
+}
+
+.smilecard p {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0 30px;
+}
+
+.whatsapp-button {
+  background-color: #6c4cf1;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease;
+}
+.whatsapp-button a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.whatsapp-button:hover {
+  background-color: #563bcb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .smilecard {
+    padding: 30px 15px;
+    margin: 20px;
+  }
+
+  .smilecard h2 {
+    font-size: 24px;
+  }
+
+  .smilecard p {
+    font-size: 16px;
+  }
+
+  .smilecard-icon img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+
+/* count se */
+  .counter-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .counter-box {
+    flex: 1 1 200px;
+  }
+
+  .counter {
+    font-size: 64px;
+    font-weight: bold;
+    color: #37495e;
+  }
+
+  .counter + p {
+    font-size: 18px;
+    color: #37495e;
+    margin-top: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .counter-container {
+      gap: 50px;
+    }
+
+    .counter {
+      font-size: 48px;
+    }
+  }
+
+  /* hero sec */
+
+  /* About Banner Section Styles */
+.about-section {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 99, 112, 0.5), rgba(0, 206, 252, 0.5)),  url('../images/about-hero.jpg') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -80px; /* Push section up behind navbar */
+  padding-top: 80px;  /* Add space so content appears correctly below navbar */
+  z-index: 1;
+}
+
+.about-section .content-box {
+  text-align: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.about-section .content-box h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-section .content-box p {
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+.about-section .content-box span {
+  margin: 0 5px;
+  color: #fff;
+}
+.content-box a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* section-4 */
+
+.comfort-services-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.comfort-services-section .services-header .subtitle {
+  color: #00c853;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.comfort-services-section .services-header h2 {
+  font-size: 28px;
+  color: #1e88e5;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.comfort-services-section .services-header .desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.comfort-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.comfort-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.comfort-card:hover {
+  transform: translateY(-5px);
+  border: 1px solid green;
+}
+
+.comfort-card .icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 20px;
+  background: #f5faff;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comfort-card .icon img {
+  width: 70px;
+  height: 70px;
+}
+
+.comfort-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.comfort-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.comfort-card a {
+  color: #00c853;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .comfort-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .comfort-services-section .services-header h2 {
+    font-size: 24px;
+  }
+}

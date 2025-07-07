@@ -51,6 +51,7 @@ body {
   width: 280px;
   background-color: #111111b9 !important;
   color: rgb(0, 0, 0);
+  z-index: 222;
 }
 
 .offcanvas-header {

@@ -1,0 +1,257 @@
+.contact-section {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(rgba(0, 99, 112, 0.5), rgba(0, 206, 252, 0.5)),  url('../images/contact-hero.jpg') center center/cover no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -80px; /* Push section up behind navbar */
+  padding-top: 80px;  /* Add space so content appears correctly below navbar */
+  z-index: 1;
+}
+
+.contact-section .content-box {
+  text-align: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.contact-section .content-box h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-section .content-box p {
+  font-size: 18px;
+  color: #f0f0f0;
+}
+
+.contact-section .content-box span {
+  margin: 0 5px;
+  color: #fff;
+}
+.content-box a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.smilecard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 50px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin: 40px auto;
+  max-width: 900px;
+}
+.smilecard:hover{
+    border: 1px solid green;
+}
+
+.smilecard-content {
+  text-align: center;
+}
+
+.smilecard-icon img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.smilecard h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #000;
+}
+
+.smilecard p {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0 30px;
+}
+
+.whatsapp-button {
+  background-color: #6c4cf1;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease;
+}
+.whatsapp-button a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.whatsapp-button:hover {
+  background-color: #563bcb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .smilecard {
+    padding: 30px 15px;
+    margin: 20px;
+  }
+
+  .smilecard h2 {
+    font-size: 24px;
+  }
+
+  .smilecard p {
+    font-size: 16px;
+  }
+
+  .smilecard-icon img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* anytime */
+.anytime-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #f9fafb;
+}
+
+.anytime-title h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #333;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.bold {
+  font-weight: bold;
+  color: #222;
+}
+
+.circled-text {
+  position: relative;
+  font-weight: bold;
+  color: #6c63ff;
+  display: inline-block;
+  /* z-index: 1; */
+}
+
+
+@media (max-width: 600px) {
+  .anytime-title h2 {
+    font-size: 24px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* gallery */
+.gallery-contact-card {
+  padding: 50px 20px;
+  background: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card-wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-card {
+  background: #e6f5ee;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  min-height: 400px;
+  transition: all 0.5s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-image: url('your-default-green-bg.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-card:hover {
+  background: #ff69b4e9; /* pink overlay */
+  background-image: url('your-hover-red-bg.svg'); /* optional */
+  color: rgb(0, 0, 0);
+}
+
+.contact-card .card-content {
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  /* z-index: 2; */
+}
+
+.card-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.card-title i {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.contact-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.card-btn {
+  display: inline-block;
+  color: #000;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-card:hover .card-btn {
+  border-color: #00ff88;
+  color: #000000;
+  background-color: transparent;
+}
+.contact-card.first{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(120, 120, 120, 0.5)),  url(../images/car-icon-1.svg);
+}
+.contact-card.second{
+    background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(120, 120, 120, 0.5)), url(../images/car-icon-3.svg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}

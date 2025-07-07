@@ -49,3 +49,36 @@ fetch('footer.html')
       navbar.classList.remove('scrolled');
     }
   });
+
+//   count section
+
+ let hasAnimated = false;
+
+  function animateCounters() {
+    document.querySelectorAll('.counter').forEach(counter => {
+      counter.innerText = '0';
+      const update = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const increment = target / 60;
+
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(update, 20);
+        } else {
+          counter.innerText = target + '+';
+        }
+      };
+      update();
+    });
+  }
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounters();
+      }
+    });
+  }, { threshold: 0.5 });
+
+  observer.observe(document.querySelector('#counter-section'));
