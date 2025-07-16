@@ -82,3 +82,15 @@ fetch('footer.html')
   }, { threshold: 0.5 });
 
   observer.observe(document.querySelector('#counter-section'));
+
+
+
+
+//   document.addEventListener('DOMContentLoaded', function() {
+//   document.querySelectorAll('#mobileMenu .nav-link').forEach(function(link) {
+//     link.addEventListener('click', function() {
+//       const offcanvas = bootstrap.Offcanvas.getOrCreateInstance(document.getElementById('mobileMenu'));
+//       offcanvas.hide();
+//     });
+//   });
+// });
